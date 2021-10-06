@@ -1,0 +1,18 @@
+#advertisment-container {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#advertisment-container img {
+  width: 600px;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  #advertisment-container img {
+    width: 90%;
+  }
+}

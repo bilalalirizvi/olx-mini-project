@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+#dashboard-container {
+  width: 100%;
+  height: 100vh;
+}
+#items-container {
+  width: 100%;
+  min-height: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#items-render {
+  width: 93%;
+  min-height: 265px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px 0px;
+}
+#loading {
+  width: 50px !important;
+  height: 50px !important;
+  margin-top: 80px !important;
+}
+/* ------------------------------------------------------------ */
+#form-signup-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#box-wrap {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+#form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.fields {
+  padding: 5px 0px;
+  color: #002f34;
+}
+.close-form {
+  width: 100%;
+  text-align: end;
+  font-size: 25px;
+  color: rgb(156, 156, 156);
+}
+.close-form i {
+  cursor: pointer;
+}
+.avatar {
+  font-size: 100px;
+  text-align: center;
+}
+.fields-p1,
+.fields h2 {
+  text-align: center;
+}
+.fields input {
+  width: 100%;
+  border: 1px solid #002f34;
+  padding: 0px 10px;
+  height: 40px;
+  border-radius: 5px;
+}
+.fields button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #002f34;
+  color: white;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#signup-span {
+  font-weight: bold;
+  border-bottom: 1px solid #002f34;
+  cursor: pointer;
+}
+#signup-span:hover {
+  border-bottom: 1px solid transparent;
+}
+#loading-gif {
+  width: 35px;
+  height: 35px;
+  margin-left: 163px;
+}
+
+@media screen and (max-width: 500px) {
+  #items-render {
+    width: 100%;
+  }
+  #box-wrap {
+    width: 320px;
+  }
+  #loading-gif {
+    margin-left: 122px;
+  }
+}
